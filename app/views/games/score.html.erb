@@ -1,0 +1,25 @@
+<h1>Score</h1>
+<% if @result %>
+  <div class="word">
+    <strong>Your word:</strong> <%= @result[:word].capitalize %>
+  </div>
+  <div class="time">
+    <strong>Time taken to answer:</strong> <%= number_with_precision(@result[:time], precision: 5) %>
+  </div>
+  <div class="score">
+    <strong>Your score for this game:</strong> <%= number_with_precision(@result[:score], precision: 5) %>
+  </div>
+  <div class="message">
+    <strong>Message:</strong> <%= @result[:message] %>
+  </div>
+<% else %>
+  <div class="error">
+    <p>Oops, something went wrong!</p>
+  </div>
+<% end %>
+
+<div class="total-score">
+  <strong>Total score:</strong> <%= @grand_total_score || session[:score] || 0 %>
+</div>
+
+<%= link_to 'Play again', '/new' %>
