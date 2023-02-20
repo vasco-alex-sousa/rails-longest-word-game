@@ -13,3 +13,102 @@
  *= require_tree .
  *= require_self
  */
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Letters styles */
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 20rem;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+/* Score styles */
+.word, .time, .score, .message {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.word strong, .time strong, .score strong, .message strong {
+  font-weight: bold;
+}
+
+.error {
+  color: #dc3545;
+}
+
+/* Total score styles */
+.total-score {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.total-score strong {
+  font-weight: bold;
+}
+
+/* Play again styles */
+a {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
