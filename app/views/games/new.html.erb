@@ -1,5 +1,6 @@
 <h1>New Game</h1>
-<p>Letters: <%= @letters.join(', ') %></p>
+<p class="letters">Letters:</p>
+<p><strong><%= @letters.join(' ') %></strong></p>
 
 <%= form_tag('/score', method: :post, data: { turbo: false }) do %>
   <%= label_tag(:word, 'Enter a word:') %>
